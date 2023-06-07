@@ -24,7 +24,16 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 const smoothieMachine = (...ingredients) => {
-  // Your code here
+  let string = "I'm having a smoothie with ";
+  let array = [...ingredients]
+
+      return function innerSmoothie(...args){
+          array.push(...args);
+          
+          let sentence = string + array.join(" and ")
+          return sentence
+    }
+
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

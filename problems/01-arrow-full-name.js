@@ -16,6 +16,19 @@ arrowGetFullName(p2); // => 'Charlie Brown'
 
 // Your code here
 
+const arrowGetFullName = person => { 
+
+  let { firstName,lastName } = person
+   return firstName + " " + lastName
+  
+   /*OR
+  
+  let firstName = person.firstName + " " + person.lastName
+  return firstName
+
+  */
+  }
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = arrowGetFullName;

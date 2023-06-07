@@ -12,7 +12,15 @@ let result3 = reverseStr("potato"); // returns "otatop"
 
 ***********************************************************************/
 
-// Your code here
+const reverseStr = (str) => {
+    let backwardStr = ''
+    for(let i = str.length - 1; i >=0; i--){
+      let char = str[i];
+      backwardStr += char
+      
+  }
+  return backwardStr;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

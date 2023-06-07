@@ -23,9 +23,29 @@ console.log(table2(1)); // prints 6
 console.log(table2(75)); // STILL prints 6
 
 ***********************************************************************/
-function recVolume(height) {
-  // Your code here
-}
+
+//NOT WORKING
+
+function recVolume (height){
+  let volume = null 
+  let width, length;
+
+    return function getDimensions(num){
+
+      if(width === undefined){
+        width = num
+        return getDimensions
+      } 
+      else if( length === undefined){
+        length = num;
+        volume = height * width * length
+
+      }
+      
+  return volume
+  }
+};
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

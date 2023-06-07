@@ -27,10 +27,22 @@ Example 4:
   console.log(threeDays()); // prints "Happy New Year!"
 
 ***********************************************************************/
-function countDownTimer(num) {
-  // Your code here
-}
+let countDownTimer = (days) => {
+  let message = "Happy New Year!";
 
+  // need to check once first to ensure days wasn't 0
+  if (days === 0) {
+    return message;
+  }
+
+  // return a function to decrement days and check if days is 0
+  return () => {
+      days--;
+      if (days === 0) {
+        return message;
+      }
+    };
+  }
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = countDownTimer;
